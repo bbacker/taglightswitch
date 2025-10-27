@@ -117,6 +117,7 @@ for a different time than the original user applying the tags desired.
     * examples on how to add, change tags from CLI
     * mock boto3 calls so tests can can include platform agnostic find and boto3 failure mode tests
     * test and document use of timezones in offhours parsing
+    * docker -> dockerhub
 
 ## TO CONSIDER
     * document minimum viable AWS role to allow users to power instances back on, adjust tags to temporarally suspend power off
