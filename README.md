@@ -99,9 +99,9 @@ To set up the development environment and run tests:
    pytest tests/ -v
    ```
 
-Note: If you're using Python 3.13+, you may need to upgrade some packages for compatibility:
+Optionally, install development dependencies (includes ipython, ipdb for debugging):
 ```bash
-pip install --upgrade pytest boto3 botocore
+pip install -r requirements-dev.txt
 ```
 
 ## AWS Configuration
