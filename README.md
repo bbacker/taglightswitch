@@ -73,10 +73,43 @@ see tagged instances ids and power states only, requires [jq](https://stedolan.g
 
 # Setup
 
- The tools do not have arguments for aws roles, keys, profiles, etc but rely on either the
-executing environment (e.g. a jenkins instance's EC2 role or 
+## Development Setup
+
+To set up the development environment and run tests:
+
+1. Create a Python virtual environment:
+   ```bash
+   python3 -m venv venv
+   ```
+
+2. Activate the virtual environment:
+   ```bash
+   source venv/bin/activate
+   ```
+
+3. Install dependencies:
+   ```bash
+   pip install --upgrade pip
+   pip install -r requirements.txt
+   pip install -e .
+   ```
+
+4. Run the tests:
+   ```bash
+   pytest tests/ -v
+   ```
+
+Note: If you're using Python 3.13+, you may need to upgrade some packages for compatibility:
+```bash
+pip install --upgrade pytest boto3 botocore
+```
+
+## AWS Configuration
+
+The tools do not have arguments for aws roles, keys, profiles, etc but rely on either the
+executing environment (e.g. a jenkins instance's EC2 role or
 [environment variables](http://boto3.readthedocs.io/en/latest/guide/configuration.html#environment-variables)
-) to provide access. 
+) to provide access.
 
 Execute this to set AWS_PROFILE env var before any of the following examples:
 
