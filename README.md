@@ -145,7 +145,6 @@ The -t and -d arguments can be applied for 'correct' as well, but be careful - y
 for a different time than the original user applying the tags desired.
 
 ## TODO
-    * change from travisci to github actions (old travisci free mechanism no longer working)
     * install check script somewhere in $PATH
     * package to pypi
     * examples on how to add, change tags from CLI
