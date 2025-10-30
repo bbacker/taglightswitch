@@ -1,29 +1,16 @@
-appnope==0.1.0
-attrs==17.4.0
-boto3==1.6.3
-botocore==1.9.3
-decorator==4.2.1
-docutils==0.14
-fancycompleter==0.8
-ipdb==0.11
-ipython==8.10.0
-ipython-genutils==0.2.0
-jedi==0.11.1
-jmespath==0.9.3
-parso==0.1.1
-pdbpp==0.9.2
-pexpect==4.4.0
-pickleshare==0.7.4
-pluggy==0.6.0
-prompt-toolkit==1.0.15
-ptyprocess==0.5.2
-py==1.10.0
+# Development tools - updated for Python 3.13+ compatibility
+ipython>=8.10.0
+ipdb>=0.13.0
+pytest>=8.4.0
+
+# Core dependencies (should match requirements.txt)
+boto3>=1.40.0
+botocore>=1.40.0
+attrs>=17.4.0
+pluggy>=1.5.0
+py>=1.11.0
+six>=1.17.0
 Pygments==2.15.0
-pytest==3.4.1
-python-dateutil==2.6.1
-s3transfer==0.1.13
-simplegeneric==0.8.1
-six==1.11.0
-traitlets==4.3.2
-wcwidth==0.1.7
-wmctrl==0.3
+
+# Additional dev dependencies
+python-dateutil>=2.9.0
